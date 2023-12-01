@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+      <header>
+        <div class="wrapper">
+            <h1 class="title">HouseCharm</h1>
+          </div>
+        <nav>
+          <ul>
+            <li><a href="#about1">Главная</a></li>
+            <li><a href="#products1">Каталог</a></li>
+            <li><a href="#delivery1">Доставка</a></li>
+            <li><a href="#footer1">Контакты</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="popup-container">
+        <div class="popup">
+            <img src="im.jpeg" alt="Рассылка">
+          <h2>Подпишись на нашу рассылку и получи скидку 10%!</h2>
+          <p>Присоединяйтесь к нашей рассылке, чтобы оставаться в курсе самых свежих новинок!  Будьте в центре внимания и первыми узнавайте о последних трендах, эксклюзивных предложениях и захватывающих событиях. Просто введите свой адрес электронной почты ниже, и мы позаботимся о доставке самых интересных обновлений прямо в ваш почтовый ящик. </p>
+          <br>
+     <br>
+          <form>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <div class="btn-form ">
+                <span id="messageButton">Хочу быть в курсе всех событий!</span>
+              </div>
+          </form>
+          <button class=" close-btn">&times;</button>
+        </div>
+      </div>
+      
+      <main id="about1">
+        <div class="about">
+          <h3>Добро пожаловать в HouseCharm</h3>
+          <p> - ваш источник вдохновения для домашнего уюта! 
+            Откройте дверь к красоте и стилю с нашим восхитительным ассортиментом декоративных товаров для дома. 
+            Мы предлагаем элегантные решения, которые превратят ваш дом в мечту!
+            </p>
+         
+        </div>
+        </main>
+        <main id="products1">
+            <div class="products">
+              <div class="product">
+                <img src="Se17ed9ceae3c42059a8718866d2240bew.webp" alt="Товар 1">
+                <h3>Статуэтка</h3>
+                <p>700 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Статуэтка', '700 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="product.jpeg" alt="Товар 2">
+                <h3>Ваза</h3>
+                <p>900 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Ваза', '900 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="Se75732dafcad4121ac7da777658d3e59I (1).webp" alt="Товар 3">
+                <h3>Подушка</h3>
+                <p>500 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Подушка', '500 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="designer-rugs-argyle-4.jpeg" alt="Товар 4">
+                <h3>Ковер</h3>
+                <p>1000 руб</p>
+                <a href="#" class="btn"onclick="addToCart(event, 'Ковер', '1000 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="slider_big_70eb91ef11d34af4dba9bbdf5e15a29c.jpeg" alt="Товар 5">
+                <h3>Ковер</h3>
+                <p>1100 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Ковер', '1100 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="poster-nabor-iz-2-sht-116660-eichholtz.jpeg" alt="Товар 6">
+                <h3>Картина</h3>
+                <p>900 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Картина', '900 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="c0dd0082036feaa0f3e656a669f983a8.jpeg" alt="Товар 7">
+                <h3>Лампа</h3>
+                <p>990 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Лампа', '990 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="96pb2r4nsin07i4gzjbt5hvsndxipw82.png" alt="Товар 8">
+                <h3>Картина</h3>
+                <p>670 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Картина', '670 руб')">Добавить в корзину</a>
+              </div>
+              <div class="product">
+                <img src="nastolnaya-lampa-santa-lg1-black-crystal-lux-kupit-v-internet-magazine-uyutnyy-svet-rf.jpeg" alt="Товар 9">
+                <h3>Лампа</h3>
+                <p>800 руб</p>
+                <a href="#" class="btn" onclick="addToCart(event, 'Лампа', '800 руб')">Добавить в корзину</a>
+              </div>
+            </div>
+          </main>
+
+          <div id="cart" class="cart-container">
+            <h2>Корзина</h2>
+            <div class="empty-message">Корзина пуста</div>
+            <p>Общая стоимость: <span id="total-price" class="total-price">0 руб</span></p>
+ 
+          </div>
+       
+    
+      <main id="delivery1">
+        <div class="delivery"> 
+            <h2>О доставке</h2>
+            <p>  <b> Доставка по Москве:</b> <br>
+                - Стоимость доставки по Москве составляет 200 рублей. <br>
+                - Минимальная сумма заказа для бесплатной доставки - 1000 рублей. <br>
+                - Оплата производится при получении заказа или онлайн. <br>
+                <br>
+                <b>Доставка по Московской области:</b> <br>
+                - Стоимость и сроки доставки по Московской области зависят от расстояния и веса товара. <br>
+                - Пожалуйста, свяжитесь с нами для получения точной информации о стоимости и сроках доставки. <br>
+                <br>
+                <b> Доставка по России: </b> <br>
+                - Мы осуществляем доставку по всей России. <br>
+                - Стоимость и время доставки будут рассчитаны в зависимости от вашего местоположения и выбранного способа доставки. <br>
+                - Пожалуйста, свяжитесь с нами, чтобы узнать подробности о доставке в ваш регион. <br>
+                <br>
+                <b>Самовывоз:</b> <br>
+                - Вы можете забрать товар самостоятельно в нашем магазине. <br>
+                - Место и время самовывоза будут согласованы с вами при оформлении заказа. <br>
+                <br>
+            <b>Дополнительная информация:</b> <br>
+                - Чтобы получить более подробную информацию о ценах, условиях доставки и самовывоза, пожалуйста, свяжитесь с нами по телефону или электронной почте.
+                </p>
+        </div>
+      </main>
+
+      <main id="footer1"></main>
+      <footer>
+        <p>Телефон: +7 XXX-XXX-XXXX <br>
+           Электронная почта: info@example.com <br>
+           Адрес: г. Москва, ул. Примерная, д. 123 <br>
+        <br>
+            @2023 HouseCharm. Все права защищены.</p>
+      </footer> 
+      <script src="script.js"></script>
+    </body>
+    </html>

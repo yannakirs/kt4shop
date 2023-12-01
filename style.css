@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+body {
+
+    margin: 0 ;
+    padding: 0;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+  }
+  
+  .title{
+    width: 13ch;
+    overflow: hidden;
+    color: #704b0e;
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    white-space: nowrap;
+
+    animation: printed-text 3s steps(40),
+               flashin-border .75s step-start infinite;
+  }
+  
+
+  
+  @keyframes printed-text{
+    from {
+      width: 0%;
+    }
+  }
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  
+  header {
+    background-color: #ffffff;
+    text-align: center;
+    color: #704b0e;
+    padding: 10px;
+  }
+  
+ 
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #704b0e;
+    text-decoration: overline #704a0e79;
+    font-family: 'Cormorant SC', serif;
+
+
+  }
+
+  
+  .about {
+
+    background-size: cover;
+    color: #807e7e;
+    text-align: center;
+    font-family: 'Cormorant SC', serif;
+    font-size: 18px;
+    max-width: 600px auto;
+    padding: 50px 200px 80px 200px;
+  }
+  @media (max-width: 768px) {
+    .about {
+        padding: 10px;
+
+        font-size: 10px;
+   
+}
+  }
+  
+
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    
+  }
+  
+  .product {
+
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .product img:hover{
+    transform: scale(1.2);
+  }
+  .product h3{
+   padding: 3px;
+    font-size: 23px;
+    font-family: 'Cormorant SC', serif;
+
+  }
+  .product p{
+    font-size: 18px;
+    padding: 3px;
+    font-family: 'Cormorant SC', serif;
+     color:#704b0e;
+  }
+ .btn{
+    display: inline-block;
+  background-color: #704b0e;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  }
+ .btn:hover{
+    background-color: #704a0e99;
+    padding: 13px;
+ }
+.delivery{
+max-width: 100%;
+ background-size: cover;
+margin: 80px 0 80px 0;
+ color: #807e7e;
+ text-align: center;
+ font-family: 'Jost', sans-serif;
+ font-size: 18px;
+ padding: 50px 200px 80px 200px;
+}
+.delivery h2{
+    font-size: 30px;
+    color:#704b0e;
+    font-family: 'Cormorant SC', serif;
+}
+@media (max-width: 768px) {
+    .delivery {
+        padding: 10px;
+
+        font-size: 10px;
+   
+}
+  }
+
+  footer {
+width: 100%;
+font-size: 15px;
+    background-color: #704a0ea7;
+    color: #fff;
+    font-family: 'Jost', sans-serif;
+    padding: 20px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    footer {
+        padding: 10px;
+
+        font-size: 10px;
+   
+}
+  }
+  .popup-container {
+
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+  }
+  
+  .popup {
+
+    position: absolute;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#8b8674d0;
+    padding: 20px;
+    text-align: center;
+  }
+  .popup img{
+    float:left;
+    margin: 2px;
+    border:1px solid #CCC;
+    padding:6px;
+    max-width: 35%;
+    
+  }
+  label {
+    color:  #02020a;
+    font-family: 'Jost', sans-serif;
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    
+  
+  }
+  input {
+ border-radius: 50px;
+ font-family: 'Jost', sans-serif;
+    border: 5px;
+    background-color: #8b8674;
+    color: #f2f2f2;
+    font-size: 20px;
+    height: 30px;
+    line-height: 20px;
+    outline: none !important;
+    width: 100%;
+    padding: 5px;
+
+  }
+  .btn-form{
+   
+        display: inline-block;
+      background-color: #704b0e;
+      margin: 15px;
+      padding: 10px;
+      border-radius: 10px;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Jost', sans-serif;
+      font-size: 13px;
+      }
+     .btn-form:hover{
+        background-color: #704a0e99;
+        padding: 13px;
+     }
+  
+     .close-btn {
+        position: absolute;
+        bottom: 500px;
+        right: 10px;
+        background-color: #704b0e;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 30px ;
+        border-color:#704b0e;
+        width: 5%;
+        height: 5%;
+       
+      }
+  
+  
+      .cart-container {
+        justify-self: center;
+        width: 300px;
+        margin: 0 auto;
+        padding: 40px;
+        border: 3px solid #704a0e7a;
+        border-radius: 5px;
+        background-color: #704a0e2b;
+        font-family: 'Jost', sans-serif; 
+      }
+  
+      .cart-item {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #2c0c0c;
+      }
+  
+      .cart-item:last-child {
+        border-bottom: none;
+      }
+  
+      .cart-item-name {
+        font-weight: bold;
+      }
+  
+      .cart-item-price {
+        color: #888;
+      }
+  
+      .empty-message {
+        text-align: center;
+        color: #888;
+      }
+
+     
